@@ -20,7 +20,7 @@ class CreateUserTable extends Migration
             $table->string('phone_number',32)->unique();
             $table->string('password',32);
             $table->bigInteger('rewards')->default(0);
-            $table->tinyInteger('email_verified_at')->nullable();
+            $table->tinyInteger('email_verified_at')->default();
             $table->string('email_verified_token',100)->nullable();
             $table->string('facebook_id',32)->nullable();
             $table->string('google_id',32)->nullable();
